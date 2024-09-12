@@ -1,44 +1,49 @@
+assignment_1
+================
+Luna
+2024-09-12
+
 # Assignment 1: R markdown template
 
 ## Instructions: Please read through this before you begin
 
--   This assignment is due by **10pm on Thursday 09/05/2024**.
+- This assignment is due by **10pm on Thursday 09/05/2024**.
 
--   For this assignment, please **reproduce this markdown file exactly
-    as shown** using R markdown (including this list of instructions).
-    You do **NOT** need to fill out the code chunks (i.e. answer the
-    questions) for this assignment. We are just practicing markdown
-    formatting right now.
+- For this assignment, please **reproduce this markdown file exactly as
+  shown** using R markdown (including this list of instructions). You do
+  **NOT** need to fill out the code chunks (i.e. answer the questions)
+  for this assignment. We are just practicing markdown formatting right
+  now.
 
--   Please name your R markdown file `assignment_1.Rmd` and the knitted
-    markdown file `assignment_1.md`.
+- Please name your R markdown file `assignment_1.Rmd` and the knitted
+  markdown file `assignment_1.md`.
 
--   Pay attention to all the formatting in this file, including bullet
-    points, bold characters, inserted code chunks, headings, text
-    colors, blank lines, and etc. You will need to reproduce all of
-    these.
+- Pay attention to all the formatting in this file, including bullet
+  points, bold characters, inserted code chunks, headings, text colors,
+  blank lines, and etc. You will need to reproduce all of these.
 
--   You will use the product of this assignment as a template for your
-    fourth assignment, where you will actually fill out the code chunks.
+- You will use the product of this assignment as a template for your
+  fourth assignment, where you will actually fill out the code chunks.
 
--   You will have to submit your assignment through GitHub. You can
-    complete your template after Thursday’s class, but don’t worry about
-    submitting it until after we have gone over how to submit it through
-    GitHub in next Tuesday’s class. To do so, you will first move
-    `assignment_1.Rmd` and `assignment_1.md` to the `problem_sets`
-    folder in your own GitHub repository that you have created in class
-    through GitHub Classroom. (If you haven’t created this repo yet,
-    please use the following url:
-    <https://classroom.github.com/a/o8r_gQtD>). Then, you can stage
-    these files, make a commit, and push the commit.
+- You will have to submit your assignment through GitHub. You can
+  complete your template after Thursday’s class, but don’t worry about
+  submitting it until after we have gone over how to submit it through
+  GitHub in next Tuesday’s class. To do so, you will first move
+  `assignment_1.Rmd` and `assignment_1.md` to the `problem_sets` folder
+  in your own GitHub repository that you have created in class through
+  GitHub Classroom. (If you haven’t created this repo yet, please use
+  the following url: <https://classroom.github.com/a/o8r_gQtD>). Then,
+  you can stage these files, make a commit, and push the commit.
 
 ## Load packages
 
 To start, load all the required packages with the following code.
 Install them if they are not installed yet.
 
-    library(tidyverse)
-    library(knitr)
+``` r
+library(tidyverse)
+library(knitr)
+```
 
 <br>
 
@@ -56,79 +61,105 @@ corrupted the country is perceived to be.)
 
 First, we load the data using the following code.
 
-    economist_data <- read_csv("https://raw.githubusercontent.com/nt246/NTRES-6100-data-science/master/datasets/EconomistData.csv") 
+``` r
+economist_data <- read_csv("https://raw.githubusercontent.com/nt246/NTRES-6100-data-science/master/datasets/EconomistData.csv") 
+```
 
 <br>
 
 #### 1.1 Show the first few rows of `economist_data`.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.2 Explore the relationship between human development index (`HDI`) and corruption perception index (`CPI`) with a scatter plot as the following.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.3 Make the color of all points in the previous plot red.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.4 Color the points in the previous plot according to the `Region` variable, and set the size of points to 2.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.5 Set the size of the points proportional to `HDI.Rank`
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.6 Fit a **smoothing line** to **all** the data points in the scatter plot from Excercise 1.4
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.7 Fit a separate **straight line** for **each region** instead, and turn off the confidence interval.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.8 Building on top of the previous plot, show each `Region` in a different facet.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.9 Show the distribution of `HDI` in each region using density plot. Set the transparency to 0.5
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.10 Show the distribution of `HDI` in each region using histogram and facetting.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.11 Show the distribution of `HDI` in each region using a box plot. Set the transparency of these boxes to 0.5 and do not show outlier points with the box plot. Instead, show all data points for each country in the same plot. (Hint: `geom_jitter()` or `position_jitter()` might be useful.)
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 1.12 Show the count of countries in each region using a bar plot.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
@@ -149,7 +180,9 @@ hours. You can learn more about this dataset by running `?Theoph`
 
 Have a look at the data structure
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
@@ -160,31 +193,41 @@ through RMarkdown **using the kable() function**, as shown above.
 
 #### 2.1 Select columns that contain a lower case “t” in the `Theoph` dataset. Do not manually list all the columns to include.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 2.2 Rename the `Wt` column to `Weight` and `conc` column to `Concentration` in the `Theoph` dataset.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 2.3 Extract the `Dose` greater than 4.5 and `Time` greater than the mean `Time`.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 2.4 Sort the `Theoph` dataset by `Wt` from smallest to largest and secondarily by Time from largest to smallest.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 2.5 Create a new column called `Quantity` that equals to `Wt` x `Dose` in the `Theoph` dataset. This will tell you the absolute quantity of drug administered to the subject (in mg). Replace the `Dose` variable with `Quantity`.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
@@ -194,7 +237,9 @@ Show data for the 6 subjects with the smallest sum of `Dose` as below.
 **Do not define new intermediate objects for this exercise; use pipes to
 chain together functions.**
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
@@ -206,79 +251,31 @@ was produced from US economic time series data available from
 unemployed persons (`unemploy`), among other variables, in the US from
 1967 to 2015.
 
-    head(economics) %>% kable()
+``` r
+head(economics) %>% kable()
+```
 
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">date</th>
-<th style="text-align: right;">pce</th>
-<th style="text-align: right;">pop</th>
-<th style="text-align: right;">psavert</th>
-<th style="text-align: right;">uempmed</th>
-<th style="text-align: right;">unemploy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">1967-07-01</td>
-<td style="text-align: right;">506.7</td>
-<td style="text-align: right;">198712</td>
-<td style="text-align: right;">12.6</td>
-<td style="text-align: right;">4.5</td>
-<td style="text-align: right;">2944</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">1967-08-01</td>
-<td style="text-align: right;">509.8</td>
-<td style="text-align: right;">198911</td>
-<td style="text-align: right;">12.6</td>
-<td style="text-align: right;">4.7</td>
-<td style="text-align: right;">2945</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">1967-09-01</td>
-<td style="text-align: right;">515.6</td>
-<td style="text-align: right;">199113</td>
-<td style="text-align: right;">11.9</td>
-<td style="text-align: right;">4.6</td>
-<td style="text-align: right;">2958</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">1967-10-01</td>
-<td style="text-align: right;">512.2</td>
-<td style="text-align: right;">199311</td>
-<td style="text-align: right;">12.9</td>
-<td style="text-align: right;">4.9</td>
-<td style="text-align: right;">3143</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">1967-11-01</td>
-<td style="text-align: right;">517.4</td>
-<td style="text-align: right;">199498</td>
-<td style="text-align: right;">12.8</td>
-<td style="text-align: right;">4.7</td>
-<td style="text-align: right;">3066</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">1967-12-01</td>
-<td style="text-align: right;">525.1</td>
-<td style="text-align: right;">199657</td>
-<td style="text-align: right;">11.8</td>
-<td style="text-align: right;">4.8</td>
-<td style="text-align: right;">3018</td>
-</tr>
-</tbody>
-</table>
+| date       |   pce |    pop | psavert | uempmed | unemploy |
+|:-----------|------:|-------:|--------:|--------:|---------:|
+| 1967-07-01 | 506.7 | 198712 |    12.6 |     4.5 |     2944 |
+| 1967-08-01 | 509.8 | 198911 |    12.6 |     4.7 |     2945 |
+| 1967-09-01 | 515.6 | 199113 |    11.9 |     4.6 |     2958 |
+| 1967-10-01 | 512.2 | 199311 |    12.9 |     4.9 |     3143 |
+| 1967-11-01 | 517.4 | 199498 |    12.8 |     4.7 |     3066 |
+| 1967-12-01 | 525.1 | 199657 |    11.8 |     4.8 |     3018 |
 
 <br>
 
 #### 3.1 Plot the trend in number of unemployed persons (`unemploy`) though time using the economics dataset shown above. And for this question only, **hide your code and only show the plot**.
 
-    ## Write your code here
+``` r
+## Write your code here
+```
 
 <br>
 
 #### 3.2 Edit the plot title and axis labels of the previous plot appropriately. Make y axis start from 0. Change the background theme to what is shown below. (Hint: search for help online if needed)
 
-    ## Write your code here
+``` r
+## Write your code here
+```
